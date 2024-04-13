@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Control Raspberry pi Display</h1>
+<button onClick="On()" type="button">On</button>
+<button onClick="Off()" type="button">Off</button>
+<script>
+
+	function On(){
+		const Http = new XMLHttpRequest();
+ 		const url='http://localhost:3000/On';
+ 		Http.open("POST", url);
+ 		Http.send();
+	}
+
+	function Off(){
+		const Http = new XMLHttpRequest();
+ 		const url='http://localhost:3000/Off';
+ 		Http.open("POST", url);
+ 		Http.send();
+	}
+
+</script>
+</html>
+</body>
+</html>
