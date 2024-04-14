@@ -8,14 +8,14 @@
 
 	function On(){
 		const Http = new XMLHttpRequest();
- 		const url='http://localhost:3000/On';
+ 		const url='http://<%= hostname %>:3000/On';
  		Http.open("POST", url);
  		Http.send();
 	}
 
 	function Off(){
 		const Http = new XMLHttpRequest();
- 		const url='http://localhost:3000/Off';
+ 		const url='http://<%= hostname %>:3000/Off';
  		Http.open("POST", url);
  		Http.send();
 	}
